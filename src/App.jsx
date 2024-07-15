@@ -10,6 +10,8 @@ import HomePage1 from "./components/Home-Sections/Home1.component";
 
 import AboutPage from "./components/About-us/About.component";
 import ScrollToTopButton from "./components/scroll-to-top/ScrollToTop.component";
+import QuestionsPage from "./components/Q&A/Questions.component";
+import ContactsPage from "./components/Contacts/Contacts.component";
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <HeaderComponent />
       <HomePage1 />
       <AboutPage />
+      <QuestionsPage />
+      <ContactsPage />
       <ScrollToTopButton />
     </>
   )

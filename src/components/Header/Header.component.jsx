@@ -26,7 +26,12 @@ export default function HeaderComponent() {
                         </a>
                     </li>
                     <li className="navbar-li">
-                        <a href="#contact">
+                        <a href="#questions">
+                            Q&A
+                        </a>
+                    </li>
+                    <li className="navbar-li">
+                        <a href="#contacts">
                             Contact Us
                         </a>
                     </li>
