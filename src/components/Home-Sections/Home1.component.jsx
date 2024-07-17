@@ -1,4 +1,5 @@
-import logo from '/src/assets/logo.svg';
+// import logo from '/src/assets/logo.svg';
+import logo from '/public/TOT_LOGO_nobackgroun-05.png';
 import atom from '../../../src/assets/atom.svg';
 import calculator from '../../../src/assets/calculator.svg';
 import eprovetka from '../../../src/assets/eprovetka.svg';
@@ -32,12 +33,11 @@ export default function HomePage1() {
                 <li> <img src={squareDark} alt="Atom" className="svg-conf" /></li>
                 <li> <img src={atom} alt="Atom" className="svg-conf" /></li>
             </ul>
-            <img src={logo} alt="Main Logo" className="main-logo" />
             <div className="home-info">
-                <span className="welcome-span">Welcome to</span>
-                <span className="tot-span">Tot Academy</span>
-                <p>Educational Center &quot;Tot Academy&quot; offers professional training for national and international exams</p>
+                <img src={logo} alt="Main Logo" className="main-logo" />
+                <span>Educational Center &quot;Tot Academy&quot; offers professional training </span>
+                <span>for national and international exams</span>
             </div>
-        </section>
+        </section >
     );
 }
