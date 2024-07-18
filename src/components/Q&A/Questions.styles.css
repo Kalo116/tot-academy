@@ -1,4 +1,29 @@
 #questions {
-    min-height: 1000px;
+    min-height: 700px;
     background-color: #f1ac3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.questions-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questions-info .questions-title {
+    text-align: center;
+    padding-top: 2rem;
+    color: #fff;
+    padding-bottom: 12px;
+}
+
+.questions-info .questions-divider {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
 }

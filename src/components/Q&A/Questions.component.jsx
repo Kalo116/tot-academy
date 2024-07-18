@@ -1,9 +1,15 @@
-import './Questions.styles.css'
+import AccordionComponent from '../Accordion/Accordion.component';
+import './Questions.styles.css';
 
 export default function QuestionsPage() {
-    return(
+    return (
         <section id="questions">
-            <h2>Q&A</h2>
+            <div className='questions-info'>
+                <h1 className='questions-title'>Q&A</h1>
+                <div className='questions-divider'></div>
+            </div>
+            <br />
+            <AccordionComponent />
         </section>
     )
 }
