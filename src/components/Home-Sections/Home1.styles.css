@@ -8,6 +8,8 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    gap: 2rem;
+    padding: 0 7rem;
 }
 
 .background {
@@ -55,4 +57,11 @@
 .svg-conf {
     width: 100px;
     height: 100px;
+}
+
+.swiper-container{
+    margin: 3rem 0 ;
+    
+    width: 100%;
+    height: 360px;
 }

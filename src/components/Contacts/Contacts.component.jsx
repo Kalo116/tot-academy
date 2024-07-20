@@ -26,8 +26,8 @@ export default function ContactsPage() {
 
         if (res.success) {
             Swal.fire({
-                title: "Good job!",
-                text: "You clicked the button!",
+                title: "Perfect!",
+                text: "You successfully sent us an email. We will get back to you soon.",
                 icon: "success"
             });
             event.target.reset();

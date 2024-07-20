@@ -6,6 +6,7 @@ import eprovetka from '../../../src/assets/eprovetka.svg';
 import squareDark from '../../../src/assets/square-dark.svg';
 
 import './Home1.styles.css'
+import SwiperComponent from './Swiper/Swiper.component';
 
 export default function HomePage1() {
     return (
@@ -37,6 +38,10 @@ export default function HomePage1() {
                 <img src={logo} alt="Main Logo" className="main-logo" />
                 <span>Educational Center &quot;Tot Academy&quot; offers professional training </span>
                 <span>for national and international exams</span>
+            </div>
+
+            <div className='swiper-container'>
+                <SwiperComponent />
             </div>
         </section >
     );
