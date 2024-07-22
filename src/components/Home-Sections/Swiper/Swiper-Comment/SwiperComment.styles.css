@@ -1,0 +1,23 @@
+.swiper-comments {
+    width: 100%;
+    height: 90%;
+    cursor: grab;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.slide-comment {
+    height: 225px;
+    margin: 1rem 0;
+    background-color: rgb(0, 46, 93);
+    color: #fff;
+}

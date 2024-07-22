@@ -1,0 +1,44 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+    background-color: #fea91f;
+    padding: 20px;
+    border-radius: 16px;
+    border: 3px solid #fff;
+
+    /* box-shadow: 0 0 10px 3px #60737d; */
+}
+
+.card-container .image-container {
+    border-radius: 16px;
+    border: 4px solid rgb(0, 46, 93);
+}
+
+.card-container .image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-container .lec-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    color: #000000;
+}
+
+.lec-info .lec-name {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.lec-info .lec-about {
+    font-size: 16px;
+}

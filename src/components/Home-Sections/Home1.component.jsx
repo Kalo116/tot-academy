@@ -6,7 +6,8 @@ import eprovetka from '../../../src/assets/eprovetka.svg';
 import squareDark from '../../../src/assets/square-dark.svg';
 
 import './Home1.styles.css'
-import SwiperComponent from './Swiper/Swiper.component';
+import SwiperImageComponent from './Swiper/Swiper-Image/SwiperImage.component.jsx';
+import SwiperCommentsComponent from './Swiper/Swiper-Comment/SwiperComment.component.jsx';
 
 export default function HomePage1() {
     return (
@@ -41,7 +42,17 @@ export default function HomePage1() {
             </div>
 
             <div className='swiper-container'>
-                <SwiperComponent />
+                <SwiperCommentsComponent />
+            </div>
+
+            <div className="home-info">
+                <img src={logo} alt="Main Logo" className="main-logo" />
+                <span>Educational Center &quot;Tot Academy&quot; offers professional training </span>
+                <span>for national and international exams</span>
+            </div>
+
+            <div className='swiper-container'>
+                <SwiperImageComponent />
             </div>
         </section >
     );
