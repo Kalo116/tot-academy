@@ -6,7 +6,7 @@ import square from '../../../src/assets/square.svg';
 
 import './Home2.styles.css'
 
-export default function HomePage2() {
+export default function HomePagaExtra() {
     return (
         <section id="home2">
             <ul className="background2">

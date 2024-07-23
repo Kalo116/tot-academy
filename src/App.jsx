@@ -1,17 +1,12 @@
-import HeaderComponent from "./components/Header/Header.component";
+import HeaderComponent from "./components/views/Header-Section/Header.component";
 
 import './App.css'
 
-//Home Pages
-import HomePage1 from "./components/Home-Sections/Home1.component";
-// import HomePage2 from "./components/Home-Sections/Home2.component";
-
-//----------------------------------------------------------------------------------
-
-import AboutPage from "./components/About-us/About.component";
+import HomeSection from "./components/views/Home-Section/Home.Component";
+import AboutPage from "./components/views/AboutUs-Section/About.component";
 import ScrollToTopButton from "./components/scroll-to-top/ScrollToTop.component";
-import QuestionsPage from "./components/Q&A/Questions.component";
-import ContactsPage from "./components/Contacts/Contacts.component";
+import QuestionsPage from "./components/views/Q&A-Section/Questions.component";
+import ContactsPage from "./components/views/Contacts-Section/Contacts.component";
 
 
 function App() {
@@ -19,7 +14,7 @@ function App() {
   return (
     <>
       <HeaderComponent />
-      <HomePage1 />
+      <HomeSection />
       <AboutPage />
       <QuestionsPage />
       <ContactsPage />
