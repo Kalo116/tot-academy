@@ -1,0 +1,87 @@
+.home-3-container {
+    min-height: 900px;
+    width: 100%;
+    background-image: url("/public/new-photos/Tot_academy_combined.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-size: 100% 100%; */
+}
+
+.home-3-blured {
+    background-color: rgb(0, 46, 93, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.home-3-z-section {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9rem;
+    margin: 6rem 0px 10rem 0px;
+}
+
+.home-3-z-section .home-3-info {
+    padding: 16px 130px;
+    background-color: #fff;
+    color: rgb(0, 46, 93);
+    font-size: 32px;
+    text-align: center;
+    width: 1090px;
+    font-weight: 650;
+    border-radius: 16px;
+    /* margin-top: 7rem; */
+}
+
+.home-3-button a {
+    display: inline-block;
+    padding: 20px 80px;
+    font-size: 23px;
+    color: rgb(0, 46, 93);
+    background-color: #f1ac3b;
+    border: none;
+    border-radius: 41px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+.home-3-button a:hover {
+    background-color: rgb(208, 138, 25);
+}
+
+.home-3-success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+
+.home-3-success-container .home-3-success-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    line-height: 5rem;
+    font-weight: 600;
+}
+
+.home-3-success-container .home-3-success-element span:first-child {
+    font-size: 90px;
+}
