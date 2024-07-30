@@ -1,0 +1,29 @@
+.contact-map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-map-container .contact-map-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 12px;
+}
+
+.contact-map-info .contact-item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 6px;
+    font-size: 17px;
+}
+
+.contact-map {
+    width: 700px;
+    height: 500px;
+    background-color: #0000;
+    border-radius: 16px;
+}

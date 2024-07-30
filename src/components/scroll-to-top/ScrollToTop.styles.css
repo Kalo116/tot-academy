@@ -5,9 +5,14 @@
     padding: 10px;
     border-radius: 20px;
     border-style: none;
-    color: #fff;
+    color: #000000;
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 15px;
     cursor: pointer;
     z-index: 100;
+}
+
+.scroll-to-top:hover {
+    background-color: #cd3e40;
+    color: #fff;
 }
