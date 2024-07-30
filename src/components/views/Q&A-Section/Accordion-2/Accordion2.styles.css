@@ -1,0 +1,95 @@
+.accordion {
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    background-color: #0f2c54;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.accordion__item {
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+
+.accordion__label,
+.accordion__content {
+    display: flex;
+    align-items: center;
+}
+
+.accordion__label {
+    background-color: #1b3961;
+    width: 1200px;
+    height: 112px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    transition: background 0.1s;
+}
+
+.faq-number {
+    font: bold 50px / 1.2em Montserrat, sans-serif;
+    width: 130px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100%;
+    background-color: #324b6e;
+}
+
+.faq-question {
+    width: calc(100% - 130px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    font: 25px Montserrat, sans-serif;
+}
+
+.accordion__item:hover .faq-number {
+    background-color: #cd3e40;
+}
+
+/* 
+.accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;    
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+} */
+
+.accordion__content {
+    background: transparent;
+    line-height: 1.6;
+    font-size: 18px;
+    display: none;
+    width: 1200px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+    font-family: montserrat, sans-serif;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked~.accordion__content {
+    display: block;
+}
+
+.accordion__input:checked~.accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}

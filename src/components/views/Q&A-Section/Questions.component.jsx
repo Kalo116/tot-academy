@@ -1,4 +1,5 @@
-import AccordionComponent from './Accordion/Accordion.component';
+import Accordion2Component from './Accordion-2/Accordion2.component';
+// import AccordionComponent from './Accordion/Accordion.component';
 import './Questions.styles.css';
 
 export default function QuestionsPage() {
@@ -9,7 +10,8 @@ export default function QuestionsPage() {
                 <div className='questions-divider'></div>
             </div>
             <br />
-            <AccordionComponent />
+            {/* <AccordionComponent /> */}
+            <Accordion2Component />
         </section>
     )
 }
