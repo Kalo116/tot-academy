@@ -44,12 +44,12 @@
 
 .home-3-button a {
     display: inline-block;
-    padding: 20px 80px;
+    padding: 20px 40px;
     font-size: 23px;
     color: rgb(0, 46, 93);
     background-color: #f1ac3b;
     border: none;
-    border-radius: 41px;
+    border-radius: 16px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;

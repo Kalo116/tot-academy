@@ -20,6 +20,7 @@ export default function SwiperImageComponent() {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation, Autoplay]}
+                className='image-swiper-about'
             >
                 <SwiperSlide className='video-container'>
                     <video controls>

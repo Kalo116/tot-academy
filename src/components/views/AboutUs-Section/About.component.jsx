@@ -1,5 +1,6 @@
 import './About.styles.css';
 import LecturersComponent from './Lecturers/Lecturers.component';
+import SwiperImageComponent from '../../Swiper/Swiper-Image/SwiperImage.component';
 
 export default function AboutPage() {
     return (
@@ -10,11 +11,15 @@ export default function AboutPage() {
             </div>
 
             <div className="about-info">
-                <h2>🌟 Enhance your children&lsquo;s learning experience with us! 🚀</h2>
+                <h2>Enhance your learning experience with us!</h2>
             </div>
 
             <div className="lecturers-container">
                 <LecturersComponent />
+            </div>
+
+            <div className='image-slider-container'>
+                <SwiperImageComponent />
             </div>
         </section>
     )

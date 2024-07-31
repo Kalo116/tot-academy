@@ -1,6 +1,6 @@
 .accordion {
-    width: 70%;
-    border-radius: 16px;
+    /* width: 70%; */
+    /* border-radius: 16px; */
     --bs-accordion-color: #000000;
     --bs-accordion-bg: #fff;
     --bs-accordion-btn-focus-box-shadow: none;
@@ -24,8 +24,8 @@
     margin-bottom: 20px;
 }
 
-/* 
- .accordion-item {
+
+.accordion-item {
     border-radius: 20px;
     margin-bottom: 7px;
 }
@@ -36,14 +36,12 @@
 
 .accordion-body {
     border-radius: 20px;
-}  */
-
+}
 /* 
-  --bs-accordion-btn-bg: #c90101;
-    --bs-accordion-active-bg: rgb(74, 93, 84);
-    --bs-accordion-active-color: #1aff00;
-    --bs-accordion-bg: mintcream;
-    --bs-accordion-color: #363b28;
-    --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-btn-focus-border-color: unset;
-*/
+--bs-accordion-btn-bg: #c90101;
+--bs-accordion-active-bg: rgb(74, 93, 84);
+--bs-accordion-active-color: #1aff00;
+--bs-accordion-bg: mintcream;
+--bs-accordion-color: #363b28;
+--bs-accordion-btn-focus-box-shadow: none;
+--bs-accordion-btn-focus-border-color: unset; */
