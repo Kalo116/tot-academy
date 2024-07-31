@@ -8,18 +8,19 @@
 }
 
 
-.questions-info{
+.questions-info {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 16px;
+
 }
 
 .questions-info .questions-title {
     text-align: center;
-    padding-top: 2rem;
     color: #fff;
-    padding-bottom: 12px;
+    margin-bottom: 0;
 }
 
 .questions-info .questions-divider {

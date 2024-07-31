@@ -4,7 +4,7 @@ import LecturersComponent from './Lecturers/Lecturers.component';
 export default function AboutPage() {
     return (
         <section id='about'>
-            <div className='about-divider'>
+            <div className='about-divider-container'>
                 <h1 className='about-title'>About us</h1>
                 <div className='about-divider'></div>
             </div>

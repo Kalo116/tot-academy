@@ -8,7 +8,7 @@ export default function ContactsPage() {
     return (
         <section id="contacts">
             <div className='contacts-info'>
-                <h2 className='contacts-title'>Contacts</h2>
+                <h1 className='contacts-title'>Contacts</h1>
                 <div className='contacts-divider'></div>
             </div>
             <div className='contact-container'>

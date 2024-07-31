@@ -3,25 +3,24 @@
     background-color: rgb(0, 46, 93);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
-.about-divider {
+.about-divider-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 16px;
 }
 
-.about-divider .about-title {
+.about-divider-container .about-title {
     text-align: center;
-    padding-top: 2rem;
     color: #fff;
-    padding-bottom: 12px;
+    margin-bottom: 0;
 }
 
-.about-divider .about-divider {
+.about-divider-container .about-divider {
     width: 3rem;
     height: 2px;
     background-color: #fff;
@@ -34,6 +33,6 @@
 
 .lecturers-container {
     display: flex;
-    align-items: flex-start;;
+    align-items: flex-start;
     justify-content: space-evenly;
 }

@@ -23,7 +23,7 @@ export default function HomePage3() {
 
                 <div className="home-3-success-container">
                     <div className="home-3-success-element">
-                        <span>100+</span>
+                        <span>90+</span>
                         <span>students trained</span>
                     </div>
 
@@ -33,7 +33,7 @@ export default function HomePage3() {
                     </div>
 
                     <div className="home-3-success-element">
-                        <span>10+</span>
+                        <span>5+</span>
                         <span>years of experience</span>
                     </div>
                 </div>
