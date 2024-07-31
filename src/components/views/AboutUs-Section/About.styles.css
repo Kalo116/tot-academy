@@ -31,7 +31,7 @@
 .lecturers-container {
     display: flex;
     align-items: flex-start;
-    gap: 7rem;
+    gap: 1rem;
 }
 
 .image-slider-container {

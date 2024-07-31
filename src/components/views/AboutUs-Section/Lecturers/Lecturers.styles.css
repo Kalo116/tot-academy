@@ -4,13 +4,45 @@
     align-items: center;
     flex-direction: column;
     gap: 16px;
-    width: 400px;
+    width: 450px;
     background-color: #fea91f;
-    padding: 20px;
+    padding: 10px;
     border-radius: 16px;
     border: 3px solid #fff;
+    position: relative;
+}
 
-    /* box-shadow: 0 0 10px 3px #60737d; */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.card-container:hover .overlay {
+    height: 100%;
+    padding: 15px;
+}
+
+.overlay .overlay__name {
+    width: 100%;
+    margin-top: 10%;
+    font-size: 35px;
+    text-align: center; 
+}
+
+.overlay .overlay__desc {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 16px;
+    text-align: justify;
 }
 
 .card-container .image-container {
