@@ -29,19 +29,14 @@
 }
 
 .faq-number {
-    font: bold 50px / 1.2em Montserrat, sans-serif;
-    width: 130px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 3%;
     color: #fff;
     height: 100%;
     background-color: #324b6e;
 }
 
 .faq-question {
-    width: calc(100% - 130px);
+    width: calc(100% - 3%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,8 +83,4 @@
 
 .accordion__input:checked~.accordion__content {
     display: block;
-}
-
-.accordion__input:checked~.accordion__label::after {
-    transform: translateY(-50%) rotate(0.5turn);
 }

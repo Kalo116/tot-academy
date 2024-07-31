@@ -9,10 +9,9 @@ export default function Accordion2Component() {
                     return (
                         <>
                             <div className="accordion__item" key={item.activeKey}>
-                                <input type="checkbox" id={item.activeKey} className="accordion__input" />
+                                <input type="radio" id={item.activeKey} className="accordion__input" name="FAQ_accordion" />
                                 <label htmlFor={item.activeKey} className="accordion__label">
                                     <div className="faq-number">
-                                        <span>{item.number <= 9 ? `0${item.number}`: item.number}</span>
                                     </div>
                                     <div className='faq-question'>
                                         <span>{item.question}</span>
