@@ -9,7 +9,6 @@ export default function ContactsPage() {
         <section id="contacts">
             <div className='contacts-info'>
                 <h1 className='contacts-title'>Contacts</h1>
-                <div className='contacts-divider'></div>
             </div>
             <div className='contact-container'>
                 <ContactForm />

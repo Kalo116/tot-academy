@@ -21,10 +21,5 @@
     text-align: center;
     color: #fff;
     margin-bottom: 0;
-}
-
-.questions-info .questions-divider {
-    width: 3rem;
-    height: 2px;
-    background-color: #fff;
+    border-bottom: 2px solid #fff;
 }

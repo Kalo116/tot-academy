@@ -7,7 +7,6 @@ export default function AboutPage() {
         <section id='about'>
             <div className='about-divider-container'>
                 <h1 className='about-title'>About us</h1>
-                <div className='about-divider'></div>
             </div>
 
             <div className="about-info">

@@ -19,14 +19,8 @@
     text-align: center;
     color: #fff;
     margin-bottom: 0;
+    border-bottom: 2px solid #fff;
 }
-
-.contacts-divider {
-    width: 3rem;
-    height: 2px;
-    background-color: #fff;
-}
-
 .contact-container {
     display: flex;
     justify-content: space-between;

@@ -19,12 +19,7 @@
     text-align: center;
     color: #fff;
     margin-bottom: 0;
-}
-
-.about-divider-container .about-divider {
-    width: 3rem;
-    height: 2px;
-    background-color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .about-info {
