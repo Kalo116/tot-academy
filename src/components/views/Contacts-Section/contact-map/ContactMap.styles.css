@@ -23,7 +23,12 @@
 
 .contact-map {
     width: 600px;
-    height: 623px;
+    height: 653px;
     background-color: #0000;
     border-radius: 16px;
+}
+
+.contacts-map-title{
+    font-size: 40px;
+    color:#fff
 }

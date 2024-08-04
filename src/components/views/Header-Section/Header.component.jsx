@@ -1,13 +1,6 @@
-// import { useState } from "react";
 import "./Header.style.css";
 
 export default function HeaderComponent() {
-    // const [active, setActive] = useState('home');
-
-    // const handleClick = (page) => {
-    //     setActive(page);
-    // };
-
 
     return (
         <header id="header">
@@ -33,6 +26,12 @@ export default function HeaderComponent() {
                     <li className="navbar-li">
                         <a href="#contacts">
                             Contact Us
+                        </a>
+                    </li>
+
+                    <li className="navbar-li active">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            Book a call
                         </a>
                     </li>
                 </ul>

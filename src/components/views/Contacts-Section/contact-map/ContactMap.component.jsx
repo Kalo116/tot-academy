@@ -3,6 +3,7 @@ import './ContactMap.styles.css';
 export default function ContactMap() {
     return (
         <div className='contact-map-container'>
+            <span className='contacts-map-title'>Tot Academy</span>
             <div className='contact-map-info'>
                 <div className="contact-item">
                     <svg
