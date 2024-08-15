@@ -1,25 +1,20 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
 
-import 'swiper/css/bundle';
-import './SwiperImage.styles.css';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
+import './SwiperImageMobile.styles.css';
 
-export default function SwiperImageComponent() {
+import { EffectCards } from 'swiper/modules';
+
+export default function SwiperImageMobile() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
-                spaceBetween={15}
-                pagination={{
-                    clickable: true,
-                }}
-                autoplay={{
-                    delay: 2000,
-                    disableOnInteraction: true,
-                }}
-                modules={[Pagination, Autoplay]}
-                className='image-swiper-about'
+                effect={'cards'}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="mySwiper mobile-swiper"
             >
                 <SwiperSlide className='video-container'>
                     <video controls>
@@ -61,5 +56,5 @@ export default function SwiperImageComponent() {
                 </SwiperSlide>
             </Swiper>
         </>
-    )
+    );
 }

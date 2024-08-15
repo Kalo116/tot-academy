@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import CommentCard from './Comment-Card/CommentCard.component.jsx'
 import comments from './comments.js';
 
@@ -19,14 +19,13 @@ export default function SwiperCommentsComponent() {
                     delay: 2000,
                     disableOnInteraction: true,
                 }}
-                // navigation={true}
-                modules={[Pagination, Navigation, Autoplay]}
+                modules={[Pagination, Autoplay]}
                 className="swiper-comments"
             >
                 {comments.map(el => {
                     return (
                         <>
-                            <SwiperSlide className='slide-comment ' key={`comment-${el.activeKey}`} >
+                            <SwiperSlide className='slide-comment' key={`comment-${el.activeKey}`} >
                                 <CommentCard comment={el.comment} name={el.name} />
                             </SwiperSlide>
                         </>

@@ -6,7 +6,7 @@ export default function HomePage3() {
             <div className="home-3-blured"></div>
             <div className='home-3-z-section'>
                 <div className="home-3-info">
-                    <span>The university of your dreams is within reach. Our IB tutors are already there (TS copy).</span>
+                    <span>Your future starts here. Our expert tutors will guide you every step of the way.</span>
                 </div>
 
                 <div className="home-3-button">

@@ -1,54 +1,29 @@
 const comments = [
     {
         activeKey: 0,
-        comment: "\"The tutor that I worked with was recommended by a friend and it\u2019s been a great experience. There as great flexibility, fun working environment and my grades improved steadily. So thanks!\"",
-        name: "John Doe"
+        comment: "\"The IB Biology and Chemistry prep classes at TOT Academy are outstanding, offering in-depth reviews and strategic exam techniques. The tutors are knowledgeable and supportive, making complex topics easier to understand. Perfect for students looking to boost their scores.\"",
+        name: "Radoslav Velinov"
     },
     {
         activeKey: 1,
-        comment: "\"We worked with TST for 2 years and highly recommend them for IBDP tutoring. The tutors are of high quality and have deep knowledge of IB subjects. Our student is now thriving at Harvard.\"",
-        name: "Jane Smith"
+        comment: "\"I would recommend TOT Academy because of their personalized approach towards students and their highly dedicated teachers. The lessons are engaging which has helped me learn quickly and effectively while enjoying the process.\"",
+        name: "Amalia"
     },
     {
         activeKey: 2,
-        comment: "\"I have been being tutored in English and Economics. My tutor is kind and very helpful as-well. My skills for both of these subjects increased immensely since working with this tutor.\"",
-        name: "Alice Johnson"
+        comment: "\"I am very satisfied from the lessons and the overall teaching practices in the academy. I can share that after the tutoring I feel a lot more confident in my knowledge and more calm about school and tests.\"",
+        name: "Nia"
     },
     {
         activeKey: 3,
-        comment: "\"My son needed tutoring for IB Physics HL. Think Smart provided a very good and well prepared tutor and organized contacts, lessons and payments in a very professional way. I would definitely recommend this great tutoring agency to any IB student who needs some support!\"",
-        name: "Robert Brown"
+        comment: "\"Tot Academy is an amazing place where both academic development and personal growth of the student are nurtured. The teachers are professionals who inspire with their approach, creating individualized programs and encouraging thinking beyond the boundaries set in school.\"",
+        name: "Savina"
     },
     {
         activeKey: 4,
-        comment: "\"I have had a math tutor from TST for around a year now and I am really enjoying it. My math grades have clearly gone up (from a 3 in the beginning of the year to a 5 at the end) and I enjoy math much more now. I would definitely recommend the tutors from TST.\"",
-        name: "Emily Davis"
+        comment: "\"Teaching at the academy is very beneficial for students who are studying the International Baccalaureate Program. It is not easy to find additional resources for this type of diploma. I am very satisfied and grateful to the teacher for his patience with me.\"",
+        name: "Elena Manova"
     },
-    {
-        activeKey: 5,
-        comment: "\"I have been receiving tutoring in math for almost a year. It has definitely helped to increase my grades and the tutor is friendly and helpful.\"",
-        name: "Michael Miller"
-    },
-    {
-        activeKey: 6,
-        comment: "\"Great learning experience. For 3 years now I have received tutoring from them. They are able to help me with many academic subjects and throughout the years have definitely improved my potential as a student. Definitely worth a try for students struggling at school!\"",
-        name: "Sarah Wilson"
-    },
-    {
-        activeKey: 7,
-        comment: "\"We tried many tutors recommended to us at school but none of them were able to help our daughter. Thankfully, Think Smart was able to help our daughter improve her knowledge and understanding in Maths SL.\"",
-        name: "James Moore"
-    },
-    {
-        activeKey: 8,
-        comment: "\"My son was struggling with mathematics up until David (our tutor) came to our aid. I will recommend your services and certainly use them for my other son. Thank you.\"",
-        name: "Jessica Taylor"
-    },
-    {
-        activeKey: 9,
-        comment: "\"Tutoring has been of great help for our son. Thanks a lot!",
-        name: "William Anderson"
-    }
 ];
 
 export default comments;
