@@ -10,7 +10,18 @@ export default function SwiperCommentsComponent() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                breakpoints={{
+                    1251: {
+                        slidesPerView: 3,
+                    },
+
+                    803: {
+                        slidesPerView: 2,
+                    },
+                    10: {
+                        slidesPerView: 1,
+                    },
+                }}
                 spaceBetween={35}
                 pagination={{
                     clickable: true,

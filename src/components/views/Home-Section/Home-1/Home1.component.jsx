@@ -36,8 +36,7 @@ export default function HomePage1() {
             </ul>
             <div className="home-info">
                 <img src={logo} alt="Main Logo" className="main-logo" />
-                <span>Educational Center &quot;Tot Academy&quot; offers professional training </span>
-                <span>for national and international exams</span>
+                <span>Educational Center &quot;Tot Academy&quot; offers professional training for national and international exams</span>
             </div>
 
             <div className='swiper-container'>
