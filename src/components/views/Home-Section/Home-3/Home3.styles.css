@@ -27,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     gap: 9rem;
-    margin: 6rem 0px 10rem 0px;
+    margin: 6rem 0px;
 }
 
 .home-3-z-section .home-3-info {
@@ -68,6 +68,8 @@
     justify-content: center;
     align-items: center;
     gap: 20rem;
+    flex-wrap: wrap;
+    margin: 0 25px;
 }
 
 
@@ -84,4 +86,78 @@
 
 .home-3-success-container .home-3-success-element span:first-child {
     font-size: 90px;
+}
+
+@media (max-width: 1450px) {
+    .home-3-success-container {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .home-3-z-section .home-3-info {
+        padding: 35px 40px;
+        width: 790px;
+    }
+
+    .home-3-success-container .home-3-success-element span:first-child {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 980px) {
+    .home-3-success-container {
+        gap: 6rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .home-3-z-section .home-3-info {
+        padding: 25px 30px;
+        width: 590px;
+    }
+}
+
+@media (max-width: 620px) {
+    .home-3-z-section .home-3-info {
+        padding: 25px 15px;
+        width: 420px;
+        font-size: 30px;
+    }
+
+    .home-3-success-container {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .home-3-z-section .home-3-info {
+        padding: 25px 12px;
+        width: 310px;
+        font-size: 24px;
+    }
+
+    .home-3-button a {
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+
+    .home-3-success-container .home-3-success-element {
+        font-size: 20px;
+    }
+
+    .home-3-success-container .home-3-success-element span:first-child {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 330px) {
+    .home-3-z-section .home-3-info {
+        width: 290px;
+    }
+
+    .home-3-button a {
+        padding: 20px 30px;
+    }
+
 }
