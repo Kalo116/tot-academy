@@ -3,6 +3,14 @@
     height: 100%;
 }
 
+.image-swiper-about .swiper-wrapper {
+    height: 88%;
+}
+
+.image-swiper-about {
+    height: 390px;
+}
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -36,6 +44,14 @@
     width: 100%;
 }
 
-.image-swiper-about {
-    height: 320px;
+@media (max-width:1550px) {
+    .image-swiper-about {
+        height: 380px;
+    }
+}
+
+@media (max-width:1140px) {
+    .image-swiper-about {
+        height: 320px;
+    }
 }

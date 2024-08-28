@@ -9,7 +9,17 @@ export default function SwiperImageComponent() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                breakpoints={{
+                    1550: {
+                        slidesPerView: 3,
+                    },
+                    980: {
+                        slidesPerView: 2,
+                    },
+                    10: {
+                        slidesPerView: 1,
+                    }
+                }}
                 spaceBetween={15}
                 pagination={{
                     clickable: true,

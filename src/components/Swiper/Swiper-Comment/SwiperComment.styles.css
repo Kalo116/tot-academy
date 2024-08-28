@@ -4,6 +4,10 @@
     cursor: grab;
 }
 
+.swiper-comments .swiper-slide{
+    height: 86%;
+}
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;

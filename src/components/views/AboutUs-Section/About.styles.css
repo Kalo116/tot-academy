@@ -31,10 +31,27 @@
 .lecturers-container {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .image-slider-container {
     width: 90%;
     margin-bottom: 3rem;
+}
+
+.image-slider-mobile {
+    display: none;
+}
+
+@media (max-width: 980px) {
+
+    .image-slider-container {
+        display: none;
+    }
+
+    .image-slider-mobile {
+        display: block;
+    }
 }

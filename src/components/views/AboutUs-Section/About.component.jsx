@@ -1,7 +1,7 @@
 import './About.styles.css';
 import LecturersComponent from './Lecturers/Lecturers.component';
 import SwiperImageComponent from '../../Swiper/Swiper-Image/SwiperImage.component';
-// import SwiperImageMobile from '../../Swiper/Swiper-Image-Mobile/SwiperImageMobile.component'
+import SwiperImageMobile from '../../Swiper/Swiper-Image-Mobile/SwiperImageMobile.component'
 
 export default function AboutPage() {
 
@@ -21,7 +21,10 @@ export default function AboutPage() {
 
             <div className='image-slider-container'>
                 <SwiperImageComponent />
-                {/* <SwiperImageMobile /> */}
+            </div>
+
+            <div className="image-slider-mobile">
+                <SwiperImageMobile />
             </div>
         </section>
     )
