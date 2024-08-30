@@ -22,10 +22,6 @@ export default function AboutPage() {
             <div className='image-slider-container'>
                 <SwiperImageComponent />
             </div>
-
-            <div className="image-slider-mobile">
-                <SwiperImageMobile />
-            </div>
         </section>
     )
 }

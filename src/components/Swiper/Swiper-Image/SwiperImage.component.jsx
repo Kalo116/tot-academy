@@ -13,7 +13,7 @@ export default function SwiperImageComponent() {
                     1550: {
                         slidesPerView: 3,
                     },
-                    980: {
+                    800: {
                         slidesPerView: 2,
                     },
                     10: {
