@@ -12,7 +12,7 @@ export default function HomePage3() {
                 <div className="home-3-button">
                     {/* <Link to={'www.youtube.com'} /> */}
                     <a
-                        href="https://www.youtube.com/"
+                        href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0TWGKPOa6BqyP_pj4ntwZ71-_foGOPsQaHNWzRSOLRqXGjrV7mxFv0G10d86dixaW6sF48fC0j?gv=true"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

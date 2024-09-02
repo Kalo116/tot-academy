@@ -10,7 +10,7 @@ import './Home1.styles.css'
 
 export default function HomePage1() {
     return (
-        <>
+        <div className='home-1-container'>
             <ul className="background">
                 <li> <img src={atom} alt="Atom" className="svg-conf" /></li>
                 <li> <img src={atom} alt="Atom" className="svg-conf" /></li>
@@ -43,6 +43,6 @@ export default function HomePage1() {
                 <SwiperCommentsComponent />
             </div>
 
-        </>
+        </div>
     );
 }

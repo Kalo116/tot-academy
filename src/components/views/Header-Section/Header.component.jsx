@@ -18,14 +18,12 @@ export default function HeaderComponent() {
             <img src="/public/ezgif-2-69c0ff883e.jpg" alt="" />
 
             <nav className="nav-container">
-                {/* Hamburger icon for mobile */}
                 <div className={`hamburger ${isMobileMenuOpen ? "active" : ""}`} onClick={toggleMobileMenu}>
                     <span className="line"></span>
                     <span className="line"></span>
                     <span className="line"></span>
                 </div>
 
-                {/* Navbar */}
                 <ul className={`navbar ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
                     <li className="navbar-li">
                         <a href="#home" onClick={handleLinkClick}>
@@ -49,7 +47,7 @@ export default function HeaderComponent() {
                     </li>
 
                     <li className="navbar-li active">
-                        <a href="https://www.youtube.com/" target="_blank" onClick={handleLinkClick}>
+                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0TWGKPOa6BqyP_pj4ntwZ71-_foGOPsQaHNWzRSOLRqXGjrV7mxFv0G10d86dixaW6sF48fC0j?gv=true" target="_blank" onClick={handleLinkClick}>
                             Book a call
                         </a>
                     </li>
