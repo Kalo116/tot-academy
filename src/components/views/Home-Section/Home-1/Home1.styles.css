@@ -81,6 +81,12 @@
     }
 }
 
+@media (max-width:822px) {
+    #home {
+        padding-top: 80px;
+    }
+}
+
 @media (max-width: 802px) {
     .home-info {
         width: 680px;
@@ -118,6 +124,7 @@
         font-size: 16px;
         margin: 25px;
         width: 400px;
+        height: 300px;
         padding: 10px 0px;
     }
 
@@ -132,6 +139,7 @@
 @media (max-width: 415px) {
     .home-info {
         width: 320px;
+        height: 280px;
     }
 
 
