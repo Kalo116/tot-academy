@@ -11,7 +11,7 @@ export default function HeaderComponent() {
   };
 
   const handleLinkClick = () => {
-    setIsMobileMenuOpen(false); 
+    setIsMobileMenuOpen(false);
   };
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export default function HeaderComponent() {
           </li>
           <li className="navbar-li">
             <a href="#questions" onClick={handleLinkClick}>
-              Q&A
+              FAQs
             </a>
           </li>
           <li className="navbar-li">

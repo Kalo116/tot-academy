@@ -11,11 +11,11 @@ export default function SwiperCommentsComponent() {
         <>
             <Swiper
                 breakpoints={{
-                    1251: {
+                    1560: {
                         slidesPerView: 3,
                     },
 
-                    803: {
+                    976: {
                         slidesPerView: 2,
                     },
                     10: {

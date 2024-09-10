@@ -81,6 +81,14 @@
     }
 }
 
+
+@media (max-width:975px) {
+    .swiper-container {
+        width: 80%;
+    }
+
+}
+
 @media (max-width:822px) {
     #home {
         padding-top: 80px;
@@ -107,6 +115,12 @@
     }
 }
 
+@media (max-width: 627px) {
+    .swiper-container {
+        height: 420px;
+    }
+}
+
 @media (max-width: 580px) {
 
     .home-info img {
@@ -118,6 +132,7 @@
 @media (max-width: 510px) {
     .swiper-container {
         height: 400px;
+        width: 100%;
     }
 
     .home-info {
@@ -150,6 +165,6 @@
 
 @media (max-width: 400px) {
     .swiper-container {
-        height: 430px;
+        height: 480px;
     }
 }
