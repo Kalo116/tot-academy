@@ -15,7 +15,7 @@ export default function CommentCard(prop) {
                     {prop.comment}
                 </h2>
                 <p className="content-name">
-                    {prop.name}
+                    - {prop.name}
                 </p>
             </div>
         </article>

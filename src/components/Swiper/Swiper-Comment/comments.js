@@ -12,12 +12,12 @@ const comments = [
     {
         activeKey: 2,
         comment: "\"I am very satisfied from the lessons and the overall teaching practices in the academy. I can share that after the tutoring I feel a lot more confident in my knowledge and more calm about school and tests.\"",
-        name: "Nia"
+        name: "Nia Karamfilova"
     },
     {
         activeKey: 3,
         comment: "\"Tot Academy is an amazing place where both academic development and personal growth of the student are nurtured. The teachers are professionals who inspire with their approach, creating individualized programs and encouraging thinking beyond the boundaries set in school.\"",
-        name: "Savina"
+        name: "Savina Dimitrova"
     },
     {
         activeKey: 4,

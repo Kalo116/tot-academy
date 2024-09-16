@@ -4,7 +4,6 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
     justify-content: center;
     position: relative;
 }
@@ -34,7 +33,7 @@
 .comment-content .content-info {
     max-width: 100%;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 200;
     line-height: 1.5rem;
     text-align: justify;
     margin-bottom: 25px;
@@ -48,5 +47,11 @@
 @media (max-width: 1040px) {
     .comment-content .content-info {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 440px) {
+    .comment-container {
+        padding: 20px;
     }
 }

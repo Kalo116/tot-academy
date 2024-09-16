@@ -12,7 +12,6 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,12 +30,6 @@
     }
 }
 
-/* @media (max-width: 1251px) {
-    .slide-comment {
-        height: 300px;
-    }
-} */
-
 
 @media (max-width: 802px) {
     .swiper-comments {
@@ -50,12 +43,6 @@
 
 @media (max-width: 510px) {
     .slide-comment {
-        height: 320px;
-    }
-}
-
-@media (max-width: 400px) {
-    .slide-comment {
-        height: 340px;
+        height: 350px;
     }
 }

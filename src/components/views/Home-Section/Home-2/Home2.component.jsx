@@ -23,7 +23,7 @@ export default function HomePage2() {
                 </div>
 
                 <div className="home-2-image">
-                    <img src="/public/new-photos/standard_1800x1090_define-firstgen12.jpg" alt="" />
+                    <img src="/public/new-photos/image_6.png" alt="" />
                     <p>Expert IB exam preparation</p>
                 </div>
 
