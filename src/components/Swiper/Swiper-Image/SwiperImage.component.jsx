@@ -37,37 +37,37 @@ export default function SwiperImageComponent() {
                     </video>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/_DSC1913.JPG" alt="" />
+                    <img src="/new-photos/Swiper-Images/_DSC1913.JPG" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/_DSC1915.JPG" alt="" />
+                    <img src="/new-photos/Swiper-Images/_DSC1915.JPG" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/_DSC1920.JPG" alt="" />
+                    <img src="/new-photos/Swiper-Images/_DSC1920.JPG" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/_DSC1921.JPG" alt="" />
+                    <img src="/new-photos/Swiper-Images/_DSC1921.JPG" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/_DSC1931.JPG" alt="" />
+                    <img src="/new-photos/Swiper-Images/_DSC1931.JPG" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/_DSC1939.JPG" alt="" />
+                    <img src="/new-photos/Swiper-Images/_DSC1939.JPG" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/Tot_academy_cells.jpg" alt="" />
+                    <img src="/new-photos/Swiper-Images/Tot_academy_cells.jpg" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/Tot_academy_combined.jpg" alt="" />
+                    <img src="/new-photos/Swiper-Images/Tot_academy_combined.jpg" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/Tot_academy_DNA_2.jpg" alt="" />
+                    <img src="/new-photos/Swiper-Images/Tot_academy_DNA_2.jpg" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/Tot_academy_logo_2.jpg" alt="" />
+                    <img src="/new-photos/Swiper-Images/Tot_academy_logo_2.jpg" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/public/new-photos/Swiper-Images/Tot_academy_office.jpg" alt="" />
+                    <img src="/new-photos/Swiper-Images/Tot_academy_office.jpg" alt="" />
                 </SwiperSlide>
             </Swiper>
         </>
