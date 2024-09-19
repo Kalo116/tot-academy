@@ -1,4 +1,4 @@
-import logo from '/public/TOT_LOGO_nobackgroun-05.png';
+import logo from '/TOT_LOGO_nobackgroun-05.png';
 import atom from '../../../../assets/atom.svg';
 import calculator from '../../../../assets/calculator.svg';
 import eprovetka from '../../../../assets/eprovetka.svg';

@@ -1,7 +1,7 @@
 .home-3-container {
     min-height: 900px;
     width: 100%;
-    background-image: url("/public/new-photos/Tot_academy_combined.jpg");
+    background-image: url("/public/new-photos/Swiper-Images/Tot_academy_combined.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,6 +86,11 @@
 
 .home-3-success-container .home-3-success-element span:first-child {
     font-size: 90px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.home-3-success-container .home-3-success-element span:first-child.animate {
+    opacity: 1;
 }
 
 @media (max-width: 1450px) {

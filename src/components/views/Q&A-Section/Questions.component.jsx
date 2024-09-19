@@ -5,7 +5,7 @@ export default function QuestionsPage() {
     return (
         <section id="questions">
             <div className='questions-info'>
-                <h1 className='questions-title'>FAQs</h1>
+                <h1 className='questions-title title'>FAQs</h1>
             </div>
             <br />
             <Accordion2Component />

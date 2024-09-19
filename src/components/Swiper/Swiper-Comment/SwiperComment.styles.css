@@ -46,3 +46,9 @@
         height: 350px;
     }
 }
+
+@media (max-width: 350px) {
+    .swiper-comments .swiper-wrapper {
+        height: 110%;
+    }
+}

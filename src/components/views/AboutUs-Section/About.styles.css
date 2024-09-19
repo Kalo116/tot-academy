@@ -15,6 +15,10 @@
     margin-top: 16px;
 }
 
+.title {
+    margin-top: 0.75rem;
+}
+
 .about-divider-container .about-title {
     text-align: center;
     color: #fff;

@@ -18,17 +18,17 @@ export default function HomePage2() {
 
             <div className="home-2-image-container">
                 <div className="home-2-image">
-                    <img src="/public/new-photos/Tot_academy_DNA_2.jpg" alt="" />
+                    <img src="/public/new-photos/Home-Section-2-Images/standard_1800x1090_define-firstgen12.jpg" alt="" />
                     <p>Dynamic and dedicated IB tutors</p>
                 </div>
 
                 <div className="home-2-image">
-                    <img src="/public/new-photos/image_6.png" alt="" />
+                    <img src="/public/new-photos/Home-Section-2-Images/image_6.png" alt="" />
                     <p>Expert IB exam preparation</p>
                 </div>
 
                 <div className="home-2-image">
-                    <img src="/public/new-photos/image_5.png" alt="" />
+                    <img src="/public/new-photos/Home-Section-2-Images/image_5.png" alt="" />
                     <p>Personalised and interactive courses</p>
                 </div>
             </div>
