@@ -18,17 +18,23 @@ export default function HomePage2() {
 
             <div className="home-2-image-container">
                 <div className="home-2-image">
-                    <img src="/public/new-photos/Home-Section-2-Images/standard_1800x1090_define-firstgen12.jpg" alt="" />
+                    <div className="home-2-image-wrapper">
+                        <img src="/public/new-photos/Home-Section-2-Images/standard_1800x1090_define-firstgen12.jpg" alt="" />
+                    </div>
                     <p>Dynamic and dedicated IB tutors</p>
                 </div>
 
                 <div className="home-2-image">
-                    <img src="/public/new-photos/Home-Section-2-Images/image_6.png" alt="" />
+                    <div className="home-2-image-wrapper">
+                        <img src="/public/new-photos/Home-Section-2-Images/image_6.png" alt="" />
+                    </div>
                     <p>Expert IB exam preparation</p>
                 </div>
 
                 <div className="home-2-image">
-                    <img src="/public/new-photos/Home-Section-2-Images/image_5.png" alt="" />
+                    <div className="home-2-image-wrapper">
+                        <img src="/public/new-photos/Home-Section-2-Images/image_5.png" alt="" />
+                    </div>
                     <p>Personalised and interactive courses</p>
                 </div>
             </div>
