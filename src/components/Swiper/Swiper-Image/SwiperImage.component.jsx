@@ -33,7 +33,7 @@ export default function SwiperImageComponent() {
             >
                 <SwiperSlide className='video-container'>
                     <video controls>
-                        <source src="/public/new-photos/Swiper-Images/VID_20231108_124654.mp4" type="video/mp4" />
+                        <source src="new-photos/Swiper-Images/VID_20231108_124654.mp4" type="video/mp4" />
                     </video>
                 </SwiperSlide>
                 <SwiperSlide>
