@@ -34,11 +34,36 @@
 
 
 .lecturers-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1700px;
+}
+
+@media (max-width: 1400px) {
+    .lecturers-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card4 card3";
+    }
+
+    .lecturers-container > *:nth-child(1) { grid-area: card1; }
+    .lecturers-container > *:nth-child(2) { grid-area: card2; }
+    .lecturers-container > *:nth-child(3) { grid-area: card3; }
+    .lecturers-container > *:nth-child(4) { grid-area: card4; }
+}
+
+@media (max-width: 768px) {
+    .lecturers-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4";
+    }
 }
 
 .image-slider-container {

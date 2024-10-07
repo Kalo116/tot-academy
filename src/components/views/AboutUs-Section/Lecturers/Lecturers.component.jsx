@@ -2,24 +2,19 @@ import './Lecturers.styles.css';
 import lecturers from './lecturers.js';
 
 export default function LecturersComponent() {
-
     return (
         <>
-            {lecturers.map((el) => {
-                return (
-                    <div key={el.i}>
-                        <article className='card-container'>
-                            <div className="image-container">
-                                <img src={el.img} alt="" />
-                            </div>
-                            <div className="overlay">
-                                <h1 className="overlay__name">{el.name}</h1>
-                                <p className="overlay__desc">{el.desc}</p>
-                            </div>
-                        </article>
+            {lecturers.map((el, index) => (
+                <article key={el.i} className={`card-container card${index + 1}`}>
+                    <div className="image-container">
+                        <img src={el.img} alt={el.name} />
                     </div>
-                )
-            })}
+                    <div className="overlay">
+                        <h2 className="overlay__name">{el.name}</h2>
+                        <p className="overlay__desc">{el.desc}</p>
+                    </div>
+                </article>
+            ))}
         </>
     )
 }

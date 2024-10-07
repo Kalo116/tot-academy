@@ -1,16 +1,16 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay, Keyboard, Mousewheel } from 'swiper/modules';
+import { swiperImages } from './swiperImages.js';
 
 import 'swiper/css/bundle';
 import './SwiperImage.styles.css';
-
 
 export default function SwiperImageComponent() {
     return (
         <>
             <Swiper
                 breakpoints={{
-                    1550: {
+                    1650: {
                         slidesPerView: 3,
                     },
                     800: {
@@ -28,47 +28,32 @@ export default function SwiperImageComponent() {
                     delay: 2000,
                     disableOnInteraction: true,
                 }}
-                modules={[Pagination, Autoplay]}
+                keyboard={{
+                    enabled: true,
+                }}
+                mousewheel={{
+                    forceToAxis: true,
+                    sensitivity: 1,
+                    thresholdDelta: 50,
+                }}
+                modules={[Pagination, Autoplay, Keyboard, Mousewheel]}
                 className='image-swiper-about'
             >
                 <SwiperSlide className='video-container'>
-                    <video controls>
-                        <source src="new-photos/Swiper-Images/VID_20231108_124654.mp4" type="video/mp4" />
-                    </video>
+                    <div className="slide-content">
+                        <video controls>
+                            <source src="new-photos/Swiper-Images/VID_20231108_124654.mp4" type="video/mp4" />
+                        </video>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/_DSC1913.JPG" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/_DSC1915.JPG" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/_DSC1920.JPG" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/_DSC1921.JPG" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/_DSC1931.JPG" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/_DSC1939.JPG" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/Tot_academy_cells.jpg" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/Tot_academy_combined.jpg" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/Tot_academy_DNA_2.jpg" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/Tot_academy_logo_2.jpg" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/new-photos/Swiper-Images/Tot_academy_office.jpg" alt="" />
-                </SwiperSlide>
+
+                {swiperImages.map((image, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="slide-content">
+                            <img src={image} alt="tot academy image" />
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </>
     )

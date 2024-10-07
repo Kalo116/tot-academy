@@ -42,6 +42,8 @@
 .comment-content .content-name {
     font-size: 17px;
     font-weight: 200;
+    position: absolute;
+    top: 10rem;
 }
 
 @media (max-width: 1040px) {
@@ -50,8 +52,38 @@
     }
 }
 
+@media (max-width: 627px) {
+    .comment-content .content-name {
+        top: 11rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .comment-content .content-name {
+        top: 12rem;
+    }
+}
+
 @media (max-width: 440px) {
     .comment-container {
         padding: 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .comment-content .content-name {
+        top: 14rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .comment-content .content-name {
+        top: 15rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .comment-content .content-name {
+        top: 16.5rem;
     }
 }
