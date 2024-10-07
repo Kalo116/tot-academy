@@ -98,7 +98,7 @@
 
 @media (max-width: 802px) {
     .home-info {
-        width: 680px;
+        width: 90%;
     }
 }
 
@@ -106,7 +106,6 @@
     .home-info {
         font-size: 16px;
         margin: 25px;
-        width: 500px;
         padding: 10px 0px;
     }
 
@@ -139,8 +138,8 @@
     .home-info {
         font-size: 16px;
         margin: 25px;
-        width: 400px;
-        height: 300px;
+        width: 90%;
+        height: 330px;
         padding: 10px 0px;
     }
 
@@ -154,8 +153,7 @@
 
 @media (max-width: 415px) {
     .home-info {
-        width: 320px;
-        height: 280px;
+        height: 330px;
     }
 
     .swiper-container {
