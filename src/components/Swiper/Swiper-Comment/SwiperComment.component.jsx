@@ -37,7 +37,9 @@ export default function SwiperCommentsComponent() {
                     forceToAxis: true,
                     sensitivity: 1,
                     thresholdDelta: 50,
+                    thresholdTime: 50,
                 }}
+                loop={true}
                 modules={[Pagination, Autoplay, Keyboard, Mousewheel]}
                 className="swiper-comments"
             >

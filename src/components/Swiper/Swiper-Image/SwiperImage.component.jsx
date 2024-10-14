@@ -35,7 +35,9 @@ export default function SwiperImageComponent() {
                     forceToAxis: true,
                     sensitivity: 1,
                     thresholdDelta: 50,
+                    thresholdTime: 50,
                 }}
+                loop={true}
                 modules={[Pagination, Autoplay, Keyboard, Mousewheel]}
                 className='image-swiper-about'
             >
