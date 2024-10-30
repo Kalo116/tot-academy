@@ -70,6 +70,25 @@ export default function HeaderComponent() {
             </a>
           </li>
           <li className="navbar-li">
+            <a
+              href="https://ibeelearning.com"
+              target="_blank"
+              onClick={handleLinkClick}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}
+            >
+              <img
+                src="/IBEE_origiral_drawing_side_view.svg"
+                alt="IBEE Logo"
+                style={{ width: '30px', height: '30px' }}
+              />
+              IB Calculator
+            </a>
+          </li>
+          <li className="navbar-li">
             <a href="#about" onClick={handleLinkClick}>
               About Us
             </a>
