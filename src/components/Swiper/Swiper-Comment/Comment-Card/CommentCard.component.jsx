@@ -2,7 +2,7 @@ import './CommentCard.styles.css';
 
 export default function CommentCard(prop) {
     return (
-        <article className="comment-container">
+        <article className="comment-container" key={`comment-card-${prop.id}`}>
             <div className="comment-stars">
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>

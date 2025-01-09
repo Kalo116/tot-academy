@@ -8,7 +8,9 @@ export default function QuestionsPage() {
                 <h1 className='questions-title title'>FAQs</h1>
             </div>
             <br />
-            <Accordion2Component />
+            <div className="accordion">
+                <Accordion2Component />
+            </div>
         </section>
     )
 }

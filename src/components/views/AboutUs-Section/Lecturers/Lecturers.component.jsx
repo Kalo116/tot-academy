@@ -5,7 +5,7 @@ export default function LecturersComponent() {
     return (
         <>
             {lecturers.map((el, index) => (
-                <article key={el.i} className={`card-container card${index + 1}`}>
+                <article key={`lecturer-${index}`} className={`card-container card${index + 1}`}>
                     <div className="image-container">
                         <img src={el.img} alt={el.name} />
                     </div>

@@ -90,12 +90,6 @@
 
 }
 
-@media (max-width:955px) {
-    #home {
-        padding-top: 80px;
-    }
-}
-
 @media (max-width: 802px) {
     .home-info {
         width: 90%;

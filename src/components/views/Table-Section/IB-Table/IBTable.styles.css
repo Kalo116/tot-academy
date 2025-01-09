@@ -1,0 +1,253 @@
+.ib-table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.ib-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.ib-table th,
+.ib-table td {
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    position: relative;
+    background: white;
+    max-width: 200px;
+    width: 200px;
+}
+
+.ib-table th:last-child,
+.ib-table td:last-child {
+    border-right: none;
+}
+
+.ib-table th {
+    background-color: #1a4872;
+    color: white;
+    font-weight: 500;
+}
+
+.course-name {
+    text-align: left;
+    font-weight: 500;
+    width: auto;
+    max-width: none;
+}
+
+.service-cell {
+    position: relative;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.service-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.available {
+    color: #2ecc71;
+    font-size: 1.2em;
+}
+
+.unavailable {
+    color: #e74c3c;
+    font-size: 1.2em;
+}
+
+.service-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+    min-width: 200px;
+    border-radius: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+.service-cell:hover .service-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.level-info {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.level-info strong {
+    color: #f1ac3b;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.pricing-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.pricing-info div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+.level-info+.level-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Loading and Error states */
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .ib-table {
+        font-size: 14px;
+    }
+
+    .service-overlay {
+        font-size: 12px;
+    }
+}
+
+.service-overlay::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.9) transparent transparent;
+}
+
+.ib-table thead tr th:first-child {
+    border-top-left-radius: 16px;
+}
+
+.ib-table thead tr th:last-child {
+    border-top-right-radius: 16px;
+}
+
+/* Add these new styles for bottom corners */
+.ib-table tr:last-child td:first-child {
+    border-bottom-left-radius: 16px;
+}
+
+.ib-table tr:last-child td:last-child {
+    border-bottom-right-radius: 16px;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.info-icon-wrapper {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.info-icon {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.info-icon:hover {
+    color: rgb(241, 172, 59);
+}
+
+.info-overlay {
+    display: none;
+    position: fixed;
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: max-content;
+    max-width: 200px;
+    z-index: 9999;
+    border-radius: 16px;
+}
+
+.info-icon-wrapper:hover .info-overlay {
+    display: block;
+}
+
+.info-overlay::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #333;
+}
+
+@media (max-width: 605px) {
+    .ib-table-container {
+        overflow-x: auto;
+    }
+
+    .ib-table {
+        font-size: 12px;
+    }
+
+    .ib-table th,
+    .ib-table td {
+        padding: 10px;
+    }
+
+    .info-icon {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+}

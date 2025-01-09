@@ -1,25 +1,24 @@
 import HeaderComponent from "./components/views/Header-Section/Header.component";
 
 import './App.css'
-
-import HomeSection from "./components/views/Home-Section/Home.Component";
-import AboutPage from "./components/views/AboutUs-Section/About.component";
-import ScrollToTopButton from "./components/scroll-to-top/ScrollToTop.component";
-import QuestionsPage from "./components/views/Q&A-Section/Questions.component";
-import ContactsPage from "./components/views/Contacts-Section/Contacts.component";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./routes/HomePage";
+import TablePage from "./routes/TablePage";
+import { CommentsProvider } from './context/CommentsContext';
 
 
 function App() {
 
   return (
-    <>
+    <CommentsProvider>
       <HeaderComponent />
-      <HomeSection />
-      <AboutPage />
-      <QuestionsPage />
-      <ContactsPage />
-      <ScrollToTopButton />
-    </>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/table" element={<TablePage />} />
+        </Routes>
+      </main >
+    </CommentsProvider>
   )
 }
 

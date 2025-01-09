@@ -8,6 +8,17 @@
     padding: 0px 20px;
 }
 
+.accordion {
+    overflow: hidden;
+    background-color: #0f2c54;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
 .questions-info {
     display: flex;
     justify-content: center;

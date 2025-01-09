@@ -103,7 +103,7 @@
     }
 }
 
-@media (max-width: 955px) {
+@media (max-width: 1095px) {
     #header {
         position: fixed;
         top: 0;
@@ -119,9 +119,6 @@
         top: 0;
     }
 
-    #home-1-section {
-        padding-top: 90px;
-    }
 
     .nav-container {
         justify-content: space-between;
@@ -155,5 +152,25 @@
     .navbar .navbar-li a {
         padding: 10px 15px;
         font-size: 18px;
+    }
+}
+
+.home-nav-items {
+    display: flex;
+    align-items: center;
+}
+
+/* If you need to maintain the same spacing between items */
+.home-nav-items .navbar-li {
+    margin: 0;
+    /* Reset any existing margins */
+    /* Add any specific spacing you need */
+}
+
+/* For mobile responsiveness, you might need: */
+@media (max-width: 821px) {
+    .home-nav-items {
+        flex-direction: column;
+        width: 100%;
     }
 }
