@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./routes/HomePage";
 import TablePage from "./routes/TablePage";
 import { CommentsProvider } from './context/CommentsContext';
+import NotFound from "./routes/404/404";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/table" element={<TablePage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main >
     </CommentsProvider>

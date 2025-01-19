@@ -102,7 +102,7 @@ export default function HeaderComponent() {
                     </li>
                     <li className="navbar-li">
                         <Link to="/table" onClick={handleLinkClick}>
-                            IB Courses
+                            Courses
                         </Link>
                     </li>
                     <li className="navbar-li">
