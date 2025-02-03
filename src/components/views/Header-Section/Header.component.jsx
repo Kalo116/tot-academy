@@ -119,7 +119,7 @@ export default function HeaderComponent() {
                             </ul>
                         </li>
                     ) : (
-                        <>  
+                        <>
                             <li className="navbar-li">
                                 <Link to="/#home" onClick={handleLinkClick}>Home</Link>
                             </li>
@@ -136,6 +136,9 @@ export default function HeaderComponent() {
                     )}
                     <li className="navbar-li">
                         <Link to="/table" onClick={handleLinkClick}>Courses</Link>
+                    </li>
+                    <li className="navbar-li">
+                        <Link to="/shop" onClick={handleLinkClick}>Shop</Link>
                     </li>
                     <li className="navbar-li">
                         <Link
