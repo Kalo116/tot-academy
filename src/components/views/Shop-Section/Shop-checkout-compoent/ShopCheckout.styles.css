@@ -1,0 +1,53 @@
+.list-example{
+    flex: 1;
+}
+
+.shop-checkout-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 300px;
+}
+
+.shop-checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em;
+    background-color: white;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+    font-size: 0.875em;
+}
+
+[data-dark-mode="true"] .shop-checkout-item {
+    background-color: var(--purple-md);
+}
+
+
+.shop-checkout-item::before {
+    display: none;
+}
+
+
+.shop-checkout-item button {
+    appearance: none;
+    border: none;
+    padding: none;
+    margin: none;
+    background-color: transparent;
+    display: flex;
+
+    align-items: center;
+    cursor: pointer;
+}
+
+.shop-checkout-item button svg {
+    width: 1.2em;
+    fill: red;
+}
+
+
+[data-dark-mode="true"] .shop-checkout-item button svg {
+    fill: rgb(244, 67, 67);
+}
