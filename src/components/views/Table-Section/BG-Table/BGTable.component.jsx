@@ -57,7 +57,7 @@ export default function BGTable({ initialData }) {
                 {gradeTypes.map(gradeType => (
                     grades[gradeType] && (
                         <div key={gradeType} className="level-info">
-                            <strong>Grade: {gradeType}</strong>
+                            <strong>Grade: {gradeType.split(',').join(', ')}</strong>
                             {renderPricingInfo(grades[gradeType])}
                         </div>
                     )

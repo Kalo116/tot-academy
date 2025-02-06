@@ -77,9 +77,10 @@ export default function HeaderComponent() {
 
     return (
         <header id="header" className={isNavVisible ? "visible" : "hidden"}>
-            <div className="header-logo-container">
+            <Link to="/" className="header-logo-container">
                 <img src="/TOT_LOGO_navbar.png" alt="" />
-            </div>
+            </Link>
+
 
             <nav className="nav-container">
                 <div
