@@ -18,6 +18,7 @@ export const courseIBRef = collection(db, 'tot-courses/IB/courses');
 export const courseIGCSERef = collection(db, 'tot-courses/IGCSE/courses');
 export const courseMYPRef = collection(db, 'tot-courses/MYP/courses');
 export const courseBGRRef = collection(db, 'tot-courses/BG/courses');
+export const productRef = collection(db, 'tot-products');
 
 export const getComments = async () => {
     try {
@@ -75,3 +76,13 @@ export const getBGCourses = async () => {
     }
 };
 
+export const getProducts = async () => {
+    try {
+        const snapshot = await getDocs(productRef);
+        const products = snapshot.docs.map((doc) => doc.data());
+        return products;
+    } catch (err) {
+        console.log(err);
+        throw err;
+    }
+};

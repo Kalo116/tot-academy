@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f1ac3b;
+    background-color: rgb(241, 172, 59);
     padding: 20px;
     border-radius: 10px;
 }
@@ -15,22 +15,30 @@
 
 .search-input {
     padding: 10px;
-    width: 200px;
+    width: 100%;
     border: 1px solid gray;
     outline: none;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
+
 .left-section-title {
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+    color: rgb(241, 172, 59);
 }
+
 
 .shop-categories {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
     list-style: none;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -42,5 +50,44 @@
 }
 
 .left-section-post-title {
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: start;
+}
+
+.left-section-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-filter {
+    margin-top: 20px;
+}
+
+.grade-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.grade-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.grade-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.shop-category.active {
+    font-weight: 500;
+    color: #f1ac3b;
 }

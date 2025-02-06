@@ -1,11 +1,14 @@
-.list-example{
+.list-example {
     flex: 1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 10px;
 }
+
 
 .shop-checkout-list {
     list-style-type: none;
     padding: 0;
-    max-width: 300px;
 }
 
 .shop-checkout-item {
@@ -15,7 +18,7 @@
     background-color: white;
     margin-bottom: 0.5em;
     border-radius: 0.5em;
-
+    width: 100%;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
     font-size: 0.875em;
 }
@@ -50,4 +53,24 @@
 
 [data-dark-mode="true"] .shop-checkout-item button svg {
     fill: rgb(244, 67, 67);
+}
+
+.shop-checkout-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.shop-checkout-button {
+    text-decoration: none;
+    color: white;
+    background-color: var(--purple-md);
+    padding: 0.5em 1em;
+    border: 1px solid rgb(241, 172, 59);
+    border-radius: 16px;
+}
+
+.shop-checkout-button:hover {
+    background-color: rgb(241, 172, 59);
 }

@@ -5,9 +5,9 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./routes/HomePage";
 import TablePage from "./routes/TablePage";
 import { CommentsProvider } from './context/CommentsContext';
-import NotFound from "./routes/404/404";
+import NotFound from "./components/views/404/404";
 import ShopPage from "./routes/ShopPage";
-
+import Checkout from "./components/views/Checkout-Section/Checkout.component";
 
 function App() {
 
@@ -19,9 +19,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/table" element={<TablePage />} />
           <Route path="/shop" element={<ShopPage />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main >
+
 
     </CommentsProvider>
   )

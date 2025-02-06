@@ -10,7 +10,5 @@ export default function Shop() {
             <ShopList />
             <ShopCheckout />
         </div>
-
-
     );
 }
