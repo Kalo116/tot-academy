@@ -8,6 +8,7 @@ import { CommentsProvider } from './context/CommentsContext';
 import NotFound from "./components/views/404/404";
 import ShopPage from "./routes/ShopPage";
 import Checkout from "./components/views/Checkout-Section/Checkout.component";
+import Details from "./components/views/Shop-Section/Details-component/Details.components";
 
 function App() {
 
@@ -20,9 +21,11 @@ function App() {
           <Route path="/table" element={<TablePage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/shop/details/:productId" element={<Details />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main >
+
 
 
     </CommentsProvider>

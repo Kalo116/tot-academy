@@ -2,20 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import autoAnimate from "@formkit/auto-animate";
 import './ShopCheckout.styles.css';
 import { Link } from "react-router-dom";
+import { useCheckout } from "../../../../context/CheckoutContext";
 
-const shopBasketItems = [
-    { name: "🍓Strawberry", price: 2.99 },
-    { name: "🥥Coconut", price: 4.99 },
-    { name: "🥝Kiwi", price: 3.49 },
-    { name: "🍇Grape", price: 5.99 },
-    { name: "🍉Watermelon", price: 8.99 }
-];
 
 export default function ShopCheckout() {
-    const [items, setItems] = useState(shopBasketItems);
+    const { cartItems, removeFromCart } = useCheckout();
     const [total, setTotal] = useState(0);
     const listRef = useRef(null);
-
 
     useEffect(() => {
         if (listRef.current) {
@@ -23,21 +16,18 @@ export default function ShopCheckout() {
         }
     }, []);
 
-    const remove = (item) => {
-        setItems((prevItems) => {
-            shopBasketItems.push(item);
-            return prevItems.filter((fruit) => fruit !== item);
-        });
-
-    };
+    useEffect(() => {
+        const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+        setTotal(total);
+    }, [cartItems]);
 
     return (
         <div className="list-example">
             <ul ref={listRef} className="shop-checkout-list">
-                {items.map((item) => (
-                    <li key={item} className="shop-checkout-item">
-                        <span style={{ color: "black" }}>{item.name} - ${item.price}</span>
-                        <button onClick={() => remove(item)} aria-label="Remove Fruit">
+                {cartItems.map((item) => (
+                    <li key={item.cartItemId} className="shop-checkout-item">
+                        <span style={{ color: "black" }}>{item.title} - {item.price} BGN</span>
+                        <button onClick={() => removeFromCart(item.cartItemId)} aria-label="Remove Fruit">
                             X
                         </button>
 
@@ -45,11 +35,9 @@ export default function ShopCheckout() {
                 ))}
             </ul>
             <div className="shop-checkout-total">
-                <span>Total: ${total}</span>
+                <span>Total: {total.toFixed(2)} BGN</span>
                 <Link to="/checkout" className="shop-checkout-button">Checkout</Link>
             </div>
         </div>
-
-
     );
 }

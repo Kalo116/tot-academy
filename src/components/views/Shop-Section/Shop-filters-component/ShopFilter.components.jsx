@@ -30,17 +30,12 @@ export default function ShopCategories() {
             <div className="first-filter">
                 <h1 className='left-section-title'>Categories</h1>
                 <ul className="shop-categories">
-                    <li
-                        className={`shop-category ${selectedCategory === 'All' ? 'active' : ''}`}
-                        onClick={onCategoryClick}
-                    >
-                        All
-                    </li>
-                    <li className="shop-category" onClick={onCategoryClick}>Biology</li>
-                    <li className="shop-category" onClick={onCategoryClick}>Chemistry</li>
-                    <li className="shop-category" onClick={onCategoryClick}>Physics</li>
-                    <li className="shop-category" onClick={onCategoryClick}>Mathematics</li>
-                    <li className="shop-category" onClick={onCategoryClick}>STEM</li>
+                    <li className={`shop-category ${selectedCategory === 'All' ? 'active' : ''}`} onClick={onCategoryClick}>All</li>
+                    <li className={`shop-category ${selectedCategory === 'Biology' ? 'active' : ''}`} onClick={onCategoryClick}>Biology</li>
+                    <li className={`shop-category ${selectedCategory === 'Chemistry' ? 'active' : ''}`} onClick={onCategoryClick}>Chemistry</li>
+                    <li className={`shop-category ${selectedCategory === 'Physics' ? 'active' : ''}`} onClick={onCategoryClick}>Physics</li>
+                    <li className={`shop-category ${selectedCategory === 'Mathematics' ? 'active' : ''}`} onClick={onCategoryClick}>Mathematics</li>
+                    <li className={`shop-category ${selectedCategory === 'STEM' ? 'active' : ''}`} onClick={onCategoryClick}>STEM</li>
                 </ul>
             </div>
 
@@ -61,6 +56,6 @@ export default function ShopCategories() {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

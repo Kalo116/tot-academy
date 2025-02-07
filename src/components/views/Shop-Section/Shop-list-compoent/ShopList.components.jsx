@@ -7,18 +7,18 @@ export default function ShopList() {
 
     return (
         <div className="shop-list-container">
-            {filteredProducts.length > 0 
+            {filteredProducts.length > 0
                 ? (
                     <div className="products">
                         {filteredProducts.map((product) => (
-                            <ShopItem 
-                                key={product.id} 
-                                productData={product.data} 
-                                productId={product.id} 
+                            <ShopItem
+                                key={product.id}
+                                productData={product.data}
+                                productId={product.id}
                             />
                         ))}
                     </div>
-                ) 
+                )
                 : <p className="no-cards-p">No items match your filters</p>
             }
         </div>

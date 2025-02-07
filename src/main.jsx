@@ -4,6 +4,7 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom';
 import { CommentsProvider } from './context/CommentsContext.jsx';
 import { ProductsProvider } from './context/ProductsContext.jsx';
+import { CheckoutProvider } from './context/CheckoutContext.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -11,7 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <CommentsProvider>
         <ProductsProvider>
-          <App />
+          <CheckoutProvider>
+            <App />
+          </CheckoutProvider>
         </ProductsProvider>
       </CommentsProvider>
     </BrowserRouter>
