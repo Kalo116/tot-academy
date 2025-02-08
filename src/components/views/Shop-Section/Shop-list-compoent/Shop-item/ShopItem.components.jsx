@@ -9,9 +9,7 @@ export default function ShopItem({ productData, productId }) {
         <div className="product">
             <img src={productData.imageUrl} alt={productData.title} />
             <h3 className="product-name">{productData.title}</h3>
-            <p className="product-description">{productData.description}</p>
             <div className="product-details">
-
                 <span className="product-category">{productData.cat.join(', ')}</span>
                 <span className="product-grades">Grades: {productData.grades.join(', ')}</span>
             </div>
